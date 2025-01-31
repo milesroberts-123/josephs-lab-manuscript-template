@@ -14,6 +14,8 @@ Copy all of the files in this repo into overleaf and use the prompts in each `.t
 
 `reviews.tex` is a template for writing responses to reviewer comments
 
+`library.bib` contains all references in .bib format, which can be exported from most reference managers. I recommend syncing your overleaf with zotero or something similar.
+
 `cover.tex` is a simple template for writing a cover letter.
 
 `figures/` contains separate folders for main figures and supplementary figures
