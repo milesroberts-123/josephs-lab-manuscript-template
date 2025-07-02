@@ -74,6 +74,10 @@
 \usepackage[fulladjust]{marginnote}
 \reversemarginpar
 
+% use xr to allow referencing figures in supplement
+\usepackage{xr}
+\externaldocument{supplement}
+
 % document begins here
 \begin{document}
 \vspace*{0.35in}
@@ -123,6 +127,7 @@ To add a parenthetical citation, use \citep{corbett-detig_natural_2015}. To add 
 
 To add hyperlinks, use: \href{https://www.overleaf.com/learn}{Example hyperlink}
 
+
 \section*{Materials and Methods}
 
 \subsection*{Section 1}
@@ -158,6 +163,8 @@ You can reference the equation as so (See equation \ref{eq:pi})
 \end{figure}
 
 Type your results here. Reference your figures like so (see Figure \ref{fig:logo}).
+
+You can also reference figures in the supplement like so: Figure \ref{fig:sup}.
 
 \section*{Discussion}
 
