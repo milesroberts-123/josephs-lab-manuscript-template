@@ -24,10 +24,18 @@ You can replace `Josephs_transparent.png` with your own lab logo if you wish.
 
 ## Tracked changes
 
-Overleaf will typically track changes if you have the paid version, but it can be annoying to have all of the tracks on screen when you're writing. A good practice is to label your overleaf versions (undernearth history tab) for each major milestone. For example, label the version you submit to biorxiv as `biorxivV1` or something similar. If you have labeled your versions, then it's easy to download an old version of a `.tex` file and compare it to a revised version with `latexdiff` on the command line:
+Overleaf will track changes in your .tex file if you have the paid version, but it can be annoying to have all of the tracks on screen when you're writing and these tracks won't render into a pdf that you can then turn into a journal or peer reviewer. You can generate a tracked changes pdf though by comparing a new .tex file to its older version.
+
+**Tip**: A good practice is to label your overleaf versions (undernearth history tab) for each major milestone. For example, label the version you submit to biorxiv as `biorxivV1` or something similar. If you have labeled your versions, then it's easy to download the proper old version of a `.tex` file and compare it to a revised version.
+
+### latexdiff on command line
+
+Install `latexdiff` on the command line and get the two tex files you want compare:
 
 `latexdiff old.tex new.tex > diff.tex`
 
-where `diff.tex` will be a tracked changes version of your document.
+### latexdiff on overleaf
 
-You can install `latexdiff` with conda or [use it on overleaf](https://www.overleaf.com/learn/latex/Articles/How_to_use_latexdiff_on_Overleaf)
+Or you can just use latexdiff on overleaf. Download an old version of your main.tex file by going through your version history (hopefully you labeled your versions!) and then add it to your project as old.tex. Then compile the diff.tex file in your project.
+
+This solution comes from the [overleaf documentation](https://www.overleaf.com/learn/latex/Articles/How_to_use_latexdiff_on_Overleaf)
