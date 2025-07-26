@@ -10,9 +10,9 @@ Copy all of the files in this repo into overleaf and use the prompts in each `.t
 
 `main.tex` contains the main text of the manuscript
 
-`supplement.tex` contains supplementary figures, methods, etc.
+`supplement.tex` contains supplementary materials, etc.
 
-`reviews.tex` is a template for writing responses to reviewer comments
+`reviews.tex` is a template for writing responses to reviewer comments.
 
 `library.bib` contains all references in .bib format, which can be exported from most reference managers. I recommend syncing your overleaf with zotero or something similar.
 
@@ -21,6 +21,10 @@ Copy all of the files in this repo into overleaf and use the prompts in each `.t
 `figures/` contains separate folders for main figures and supplementary figures
 
 You can replace `Josephs_transparent.png` with your own lab logo if you wish.
+
+## Labeling figures
+
+Give your figures a unique label with `\label{WHATEVER}`. This project uses the xr package so that even the supplemental figures you add to supplement.tex can be referenced with their appropriate labels in main.tex
 
 ## Tracked changes
 
