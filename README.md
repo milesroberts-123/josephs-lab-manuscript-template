@@ -24,7 +24,7 @@ You can replace `Josephs_transparent.png` with your own lab logo if you wish.
 
 ## Labeling figures
 
-Give your figures a unique label with `\label{WHATEVER}`. This project uses the xr package so that even the supplemental figures you add to supplement.tex can be referenced with their appropriate labels in main.tex
+Give your figures a unique label with `\label{WHATEVER}` then when referencing the figure in the text use `\ref{WHATEVER}`. This project also uses the xr package so that even the supplemental figures you add to supplement.tex can be referenced in main.tex
 
 ## Tracked changes
 
