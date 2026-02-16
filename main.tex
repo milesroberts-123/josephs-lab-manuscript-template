@@ -74,9 +74,15 @@
 \usepackage[fulladjust]{marginnote}
 \reversemarginpar
 
+% fancyhdr to add running title
+\usepackage{fancyhdr}
+
 % use xr to allow referencing figures in supplement
 \usepackage{xr}
 \externaldocument{supplement}
+
+% Running title
+\fancyhead[R]{Running title}
 
 % document begins here
 \begin{document}
@@ -127,6 +133,9 @@ To add a parenthetical citation, use \citep{corbett-detig_natural_2015}. To add 
 
 To add hyperlinks, use: \href{https://www.overleaf.com/learn}{Example hyperlink}
 
+\begin{flushleft}
+\textbf{Key words:} evolution, genetics
+\end{flushleft}
 
 \section*{Materials and Methods}
 
