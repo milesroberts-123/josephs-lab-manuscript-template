@@ -6,6 +6,14 @@
 
 \usepackage{natbib}
 
+% For line number references
+\usepackage{lineno}
+
+% Reference across documents
+\usepackage{xr}
+\externaldocument{main}
+\externaldocument{supplement}
+
 % use the response environment to 
 \newenvironment{response}{\bfseries}{}
 
@@ -33,6 +41,9 @@ Paste review comments here and number them, repeat as necessary. Example:
 
 \begin{response}
 We appreciate this insightful feedback. Please see previous work for more cool stuff \citep{corbett-detig_natural_2015}.
+
+You can reference line numbers in the other main text like this (see line \ref{ln:discuss}) And reference figures in the supplement like this (Figure \ref{fig:sup})
+
 \end{response}
 
 \subsection*{Reviewer 2}
